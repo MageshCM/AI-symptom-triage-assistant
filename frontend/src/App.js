@@ -12,7 +12,8 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://127.0.0.1:8000/analyze", {
+      
+      const response = await axios.post("https://ai-symptom-triage-assistant.onrender.com/analyze", {
         symptoms: symptoms,
         age: 21,
         gender: "male"
